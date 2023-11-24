@@ -1,18 +1,23 @@
 import React, { useState } from "react";
 import { Space, Button, Typography, Flex, theme } from "antd";
-import { LeftOutlined, PhoneFilled, UserOutlined } from "@ant-design/icons";
+import { LeftOutlined, PhoneFilled, UserOutlined ,   TeamOutlined,
+  FilePptOutlined,
+  VideoCameraOutlined,
+  FileTextOutlined,
+  FileImageOutlined,
+  EditOutlined, } from "@ant-design/icons";
 const AppHeader = () => {
   const {
     token: { colorBgContainer },
   } = theme.useToken();
 
   const options = [
-    { label: "Classroom", value: "classroom", icon: <UserOutlined /> },
-    { label: "Whiteboard", value: "Whiteboard", icon: <UserOutlined /> },
-    { label: "Videos", value: "Videos", icon: <UserOutlined /> },
-    { label: "SlideShow", value: "Slideshow", icon: <UserOutlined /> },
-    { label: "Documents", value: "Documents", icon: <UserOutlined /> },
-    { label: "Doc.cam", value: "Doc.cam", icon: <UserOutlined /> },
+    { label: "Classroom", value: "classroom", icon: <TeamOutlined /> },
+    { label: "Whiteboard", value: "Whiteboard", icon: < EditOutlined/> },
+    { label: "Videos", value: "Videos", icon: <VideoCameraOutlined /> },
+    { label: "SlideShow", value: "Slideshow", icon: <FileTextOutlined /> },
+    { label: "Documents", value: "Documents", icon: <FileImageOutlined /> },
+    { label: "Doc.cam", value: "Doc.cam", icon: <FilePptOutlined /> },
   ];
 
   const [selectedButton, setSelectedButton] = useState("Videos");
