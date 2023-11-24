@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400&family=Poppins:wght@300&family=Quicksand:wght@300&family=Raleway:wght@100&display=swap");
+
+.font-lato {
+  font-family: "Lato", sans-serif;
+}
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+.font-quicksand {
+  font-family: "Quicksand", sans-serif;
+}
+
+.font-raleway {
+  font-family: "Raleway", sans-serif;
+}
+.ant-layout{
+    background: "#fff"!important;
+}
+
+.ant-card-body{
+    padding: 0!important;
+}
+.embed-card{
+    width: 100%;
+    height: 500px!important;
+}
+.embed-iframe{
+    height: 500px!important;
+    border-radius: 10px!important;
+}
